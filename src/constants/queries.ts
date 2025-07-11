@@ -1,1 +1,2 @@
 export const GET_ROOMS_QUERY_KEY = "GET_ROOMS";
+export const GET_QUESTIONS_QUERY_KEY = "GET_QUESTIONS";
