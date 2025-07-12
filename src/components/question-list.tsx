@@ -16,14 +16,7 @@ export default function QuestionList({ roomId }: QuestionListProps) {
       </div>
 
       {data?.map((question) => (
-        <QuestionItem
-          key={question.id}
-          question={{
-            id: question.id,
-            question: question.question,
-            createdAt: question.createdAt,
-          }}
-        />
+        <QuestionItem key={question.id} question={question} />
       )) || (
         <p className="text-muted-foreground">Nenhuma pergunta encontrada.</p>
       )}
